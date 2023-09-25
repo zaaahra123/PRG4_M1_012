@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>P2_012</title>
+    <link rel="stylesheet" href="stycle.css" />
+  </head>
+  <body>
+    <div class="header1">P2_012</div>
+
+    <form onsubmit="return validate()">
+      <table>
+        <tbody>
+          <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td>
+              <input id="nama" type="text" />
+            </td>
+            <td id="error_nama" style="color: red"></td>
+          </tr>
+          <tr>
+            <td>Mata Kuliah</td>
+            <td>:</td>
+            <td>
+              <select id="mataKuliah">
+                <option value="">Pilih Mata Kuliah</option>
+                <option value="Matematika">Matematika</option>
+                <option value="Fisika">Fisika</option>
+                <option value="Kimia">Kimia</option>
+              </select>
+            </td>
+            <td id="error_matakuliah" style="color: red"></td>
+          </tr>
+          <tr>
+            <td>Nilai</td>
+            <td>:</td>
+            <td>
+              <input id="nilai" type="number" min="1" max="100" />
+            </td>
+            <td id="error_nilai" style="color: red"></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <!-- untuk menggabungkan 2 cell menjadi 1 cell -->
+              <button type="button" onclick="alert('Jawaban Anda dibatalkan')">
+                Batal
+              </button>
+            </td>
+            <td colspan="2">
+              <button type="submit">Kirim</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <script>
+      function validate() {
+        let nama = document.getElementById("nama").value;
+        let mataKuliah = document.getElementById("mataKuliah").value;
+        let nilai = document.getElementById("nilai").value;
+        let validate = true;
+
+        // validasi nama
+        if (nama.trim() === "") {
+          document.getElementById("error_nama").innerText =
+            "Harap isi field Nama!";
+          validate = false;
+        } else {
+          let namaPattern = /^[a-zA-Z\s]*$/;
+          if (!namaPattern.test(nama.trim())) {
+            document.getElementById("error_nama").innerText =
+              "Nama harus berisi huruf atau spasi!";
+            validate = false;
+          } else {
+            document.getElementById("error_nama").innerText = "";
+          }
+        }
+
+        // validasi mata kuliah
+        if (matakuliah === "") {
+          document.getElementById("error_matakuliah").innerText =
+            "Harap pilih Mata Kuliah!"; //tampilkan pesan kesalahan
+          validate = false;
+        } else {
+          document.getElementById("error_matakuliah").innerText = ""; // hapus pesan kesalahan jika valid
+        }
+
+        // validasi nilai
+        if (nilai === "") {
+          document.getElementById("error_nilai").innerText =
+            "Harap isi field nilai"; // tampilkan pesan kesalahan
+          validate = false;
+        } else {
+          document.getElementById("error_nilai").innerText = ""; // hapus pesan kesalahan jika valid
+        }
+        return validate;
+      }
+    </script>
+  </body>
+</html>
