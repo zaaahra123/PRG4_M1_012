@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HAHAHIHI CAFE</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">HAHAHIHI<span>CAFE</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="#">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+        <a href="#tester">Tester</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="barmenu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- navbar end -->
+</head>
+<body>
+    <!-- contact section start -->
+    <section id="contact" class="contact">
+        <h2><span>Kontak</span> Kami</h2>
+        <p>
+          Untuk teman-teman yang sudah mencoba menu di HAHAHIHI CAFE bisa yaa
+          isi form nya!! ditunggu komenan positif dari teman-teman.
+        </p>
+  
+        <div class="row">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126748.60965104045!2d107.56075424980801!3d-6.903271950263149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20Kota%20Bandung%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1694952897933!5m2!1sid!2sid"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="maps"
+          ></iframe>
+  
+          <form action="">
+            <div class="input-group">
+              <!-- <label for="nama" class="nama"></label>
+              <input type="text" class="form-control" id="nama" /> -->
+              <i data-feather="user"></i>
+              <input type="text" placeholder="nama" />
+            </div>
+            <div class="input-group">
+              <!-- <label for="usia" class="usia"></label>
+              <input type="text" class="form-control" id="usia" /> -->
+              <i data-feather="mail"></i>
+              <input type="text" placeholder="email" />
+            </div>
+            <div class="input-group">
+              <i data-feather="phone"></i>
+              <input type="text" placeholder="no handphone" />
+            </div>
+            <div class="input-group">
+              <label>Jenis Kelamin:</label><br />
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="jenisKelamin"
+                  id="Laki-laki"
+                  value="Laki-laki"
+                />
+                <label class="form-check-label" for="Laki-laki">Laki-laki</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="jenisKelamin"
+                  id="Perempuan"
+                  value="Perempuan"
+                />
+                <label class="form-check-label" for="Perempuan">Perempuan</label>
+              </div>
+            </div>
+        
+            <div class="input-group">
+              <label for="pilihanMenu">Pilihan Menu:</label><br />
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="pilmenu"
+                  value="HA Latte"
+                />
+                <label class="form-check-label" for="pilmenu">HA Latte</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="pilmenu2"
+                  value="HI Affogato"
+                />
+                <label class="form-check-label" for="pilmenu2">HI Affogato</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="pilmenu3"
+                  value="Milo Dino"
+                />
+                <label class="form-check-label" for="pilmenu3">Milo Dino</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="pilmenu4"
+                  value="Classic Chocolate"
+                />
+                <label class="form-check-label" for="pilmenu4">Classic Chocolate</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="pilmenu5" value="Thai Tea" />
+                <label class="form-check-label" for="pilmenu5">Thai Tea</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="pilmenu6" value="Milk Tea" />
+                <label class="form-check-label" for="pilmenu6">Milk Tea</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="pilmenu7" value="Matcha Latte" />
+                <label class="form-check-label" for="pilmenu7">Matcha Latte</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="pilmenu8" value="Lemon Tea" />
+                <label class="form-check-label" for="pilmenu8">Lemon Tea</label>
+              </div>
+            </div>
+        
+            <div class="input-group">
+              <label for="ulasan">Ulasan:</label><br />
+              <textarea id="ulasan" placeholder="Beri Ulasan"></textarea>
+            </div>
+        
+            <button type="submit" class="btn">Kirim</button>
+          </form>
+      </section>
+      <!-- contact section end -->
+
+       <!--  feather icon -->
+    <script>
+        feather.replace();
+      </script>
+  
+      <!-- java script -->
+      <script src="js/script.js"></script>
+</body>
+</html>
